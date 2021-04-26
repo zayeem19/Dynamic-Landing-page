@@ -1,0 +1,196 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #926239;
+  line-height: 1.6;
+}
+/* Navbar */
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+#main-nav ul {
+  display: flex;
+  list-style: none;
+}
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+#main-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #926239;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: #926239;
+}
+#main-nav a:hover {
+  color: #fff;
+  background-color: #926239;
+}
+
+#main-nav .container {
+  padding: 0.5rem 1rem;
+}
+
+/* Showcase */
+#showcase {
+  background: url("/beach.jpg") center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+#showcase h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+/* Button */
+.btn {
+  font-size: 1rem;
+  text-decoration: none;
+  border: #926239 1px solid;
+  color: #926239;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #926239;
+  color: #fff;
+}
+
+#showcase .btn {
+  border: #f4f4f4 1px solid;
+  color: #f4f4f4;
+}
+
+#showcase .btn:hover {
+  background: #f4f4f4;
+  color: #926239;
+}
+
+/* Bottom line */
+.bottom-line {
+  height: 2px;
+  width: 30px;
+  background: #ff9900;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* Section A */
+#section-a {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #926239;
+  margin: 1rem;
+}
+
+/* Section B */
+#section-b .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#section-b .container > div {
+  border: #926239 1px solid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #926239;
+}
+
+#section-b .container > div:hover {
+  color: #fff;
+  background-color: #926239;
+}
+
+/* Section C */
+#section-c .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.secondary-a {
+  border: #926239 1px solid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* Form */
+
+.secondary-b {
+  border: #926239 1px solid;
+  padding: 1.5rem;
+}
+.text-fields {
+  display: grid;
+  grid-template-areas:
+    "name" "name" "name"
+    "phone" "phone" "phone"
+    "email" "email" "email"
+    "message" "message" "message";
+  grid-gap: 1rem;
+}
+
+.text-fields .name {
+  grid-area: name;
+}
+
+.text-fields .phone {
+  grid-area: phone;
+}
+
+.text-fields .email {
+  grid-area: email;
+}
+
+.text-fields .message {
+  grid-area: message;
+  height: 100px;
+}
+
+/* Section filler */
+#filler .container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Clear */
+.clear {
+  display: none;
+}
+
+/* Footer */
+#main-footer p {
+  background-color: #926239;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  padding: 1rem;
+}
